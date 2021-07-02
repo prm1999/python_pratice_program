@@ -21,23 +21,16 @@ Print the sum of both integers on the first line, the sum of both doubles (scale
 """
 
 
-
-
-
-
-
-
-
-i = 4
-d = 4.0
-s = 'HackerRank '
-# Declare second integer, double, and String variables.
-p=int(input())
-q=float(input())
-st=input()
-print(int(p+i))
-print((d+q))
-print(s+st)
+# i = 4
+# d = 4.0
+# s = 'HackerRank '
+# # Declare second integer, double, and String variables.
+# p=int(input())
+# q=float(input())
+# st=input()
+# print(int(p+i))
+# print((d+q))
+# print(s+st)
 # Read and save an integer, double, and String to your variables.
 
 # Print the sum of both integer variables on a new line.
@@ -48,27 +41,32 @@ print(s+st)
 # The 's' variable above should be printed first.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Leap Year Program
+# Leap Year Program
 
 def is_leap(year):
     leap = False
-    if(year%4==0 and year%100!=0 or year%400==0  ):
+    if (year % 4 == 0 and year % 100 != 0 or year % 400 == 0):
         return True
-    else:return leap
+    else:
+        return leap
+
+if __name__ == '__main__':
+    year = int(input())
 
 
-year = int(input())
+print("hello")
+
+
+
+def is_leap(year):
+    leap = False
+    if (year % 4 == 0 and year % 100 != 0 or year % 400 == 0):
+        return True
+    else:
+        return leap
+
+
+if __name__ == '__main__':
+    year = 2017
+    p=is_leap(year)
+    print(p)
